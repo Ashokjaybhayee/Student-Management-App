@@ -25,15 +25,19 @@ public class Student {
 	@Column(name="email")
 	private String email;
 
+	@Column(name="mobile")
+	private Long mobile;
+
 	public Student() {
 		super();
 	}
 
-	public Student(String firstName, String lastName, String email) {
+	public Student(String firstName, String lastName, String email , Long mobile) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.mobile = mobile;
 	}
 
 
@@ -60,6 +64,12 @@ public class Student {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public Long getMobile() {
+		return mobile;
+	}
+	public void setMobile(Long mobile) {
+		this.mobile = mobile;
 	}
 
 
